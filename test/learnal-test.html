@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <script type='text/javascript' src='./mnist/get-mnist.js'></script>
+    <script type='text/javascript' src='../src/learnal.js'></script>
+</head>
+
+<body>
+
+    <h1> FILES & NN </h1>
+
+    <h2> TEST </h2>
+    <p>images :<input type='file' id='images-test'></p>
+    <p>labels :<input type='file' id='labels-test'></p>
+
+    <h2> TRAIN </h2>
+    <p>images :<input type='file' id='images-train'></p>
+    <p>labels :<input type='file' id='labels-train'></p>
+
+    <br/>
+    <button onclick='load();'>Load files</button>
+    <br/><br/><br/>
+    <button class='to-disable' onclick='resetLearnal();'>Reset Learnal</button>
+    <br/>
+
+    <p>___________________________________________________________________</p>
+
+    <h1> WHOLE TEST </h1>
+
+
+    <button class='to-disable' onclick='testLearnal();trainLearnal();testLearnal();'>Test, train, test</button><br/>
+    <button class='to-disable' onclick='testLearnal();'>Test Learnal</button>
+    <button class='to-disable' onclick='trainLearnal();'>Train Learnal</button>
+
+    <p>___________________________________________________________________</p>
+
+    <h1> SINGLE TEST </h1>
+
+    <button class='to-disable' onclick='pickAndDrawImage();'>Pick and draw an image</button><br/>
+    <canvas id='canvas'></canvas><br/>
+    <button class='to-disable' onclick='guessCanvas();'>Guess</button><br/>
+    <button class='to-disable' onclick='trainCanvas();'>Train</button><br/>
+
+
+    <script type='text/javascript' src='./learnal-test.js'></script>
+</body>
+
+</html>
